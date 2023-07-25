@@ -2,7 +2,7 @@ import "./Home.css"
 
 const Home = (props) => {
   return (
-    <span className='headerHome'>{props.title} {props.textCome} {props.showMyEvent}</span>
+    <span className='headerHomeText'>{props.title} {props.textCome} {props.showMyEvent}</span>
   )
 }
 

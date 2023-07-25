@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './components/Header/Header'
+import HeaderClass from './components/HeaderClass/headerClass';
 import Home from './components/Home/home';
+import HomeClass from './components/HomeClass/HomeClass';
 
 
 const home = 'pat Home';
@@ -16,11 +18,18 @@ function App() {
     <>
 <Header home={home} aboutme={aboutme} show={show}/>
 <container>
-<h1>
-<Home title={title}/></h1>
-<Home textCome={textCome}/>
-<Home showMyEvent={showMyEvent}/>
+  <h1>
+  <Home title={title}/></h1>
+  <Home textCome={textCome}/>
+  <Home showMyEvent={showMyEvent}/>
 </container>
+<div>
+  <HeaderClass home={home} aboutme={aboutme} show={show}/>
+  <h1>
+  <HomeClass title={title}/></h1>
+  <HomeClass textCome={textCome}/>
+  <HomeClass showMyEvent={showMyEvent}/>
+</div>
     </>
   )
 }
