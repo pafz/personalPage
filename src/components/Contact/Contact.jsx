@@ -59,24 +59,28 @@ const [btnDisabled, setBtnDisabled] = useState(true);
       <input
         type="text"
         placeholder="name"
+        value={data.name}
         onChange={handleInputChange}
         name="name"
       />
       <input
         type="email"
         placeholder="email"
+        value={data.email}
         onChange={handleInputChange}
         name="email"
       />
       <input
       type="number"
       placeholder='age'
+      value={data.age}
       onChange={handleInputChange}
       name="age"
       />
       <input
       type="tel"
       placeholder='tel'
+      value={data.tel}
       onChange={handleInputChange}
       name='tel'
       />
