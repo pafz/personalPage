@@ -1,8 +1,15 @@
 import "./Header.css"
+import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <span className='headerText'>{props.home} | {props.aboutme} | {props.show}</span>
+    <div>
+    <nav className='headerText'> 
+    <Link to="/">| HOME </Link>
+    <Link to="/aboutme">| ABOUT ME |</Link>
+    <Link to="/contact"> CONTACT |</Link>
+    </nav>
+    </div>
   )
 }
 
