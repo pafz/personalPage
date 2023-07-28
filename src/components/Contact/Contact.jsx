@@ -6,6 +6,8 @@ const Contact = () => {
   const initialState = {
     name: '',
     email: '',
+    age: '',
+    tel: '',
   };
   //*estados del componente
   //estado del formulario
